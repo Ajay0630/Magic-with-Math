@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic with Math</title>
+    </head>
+    <body>
+        <input id="input" style="border-color: crimson;">
+        <button type="button" onclick="Magic()">Enter</button>
+        <script>
+            console.log("My trick is simple actually.");
+            console.log("First, think of a number between 1 and 9.");
+            console.log("Next, multipy the number by 2.");
+            console.log("After that, add the result with three.");
+            console.log("Then multiply the sum by 5.");
+            console.log("Finally, think of a number from 1 through 4 and add it to your final result.");
+            console.log("Now type your result into the text box on the screen. Then click the button.");
+            function Magic() {
+                var result=Number(document.getElementById("input").value);
+                var answer=Number(result) - 15;
+                console.log("Your first number is the tens place of " + answer + " and your second number is the ones place of " + answer + ".");
+            }
+        </script>
+    </body>
+</html>
